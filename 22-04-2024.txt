@@ -1,0 +1,8 @@
+22/04/2024
+
+Se comenzo pensando que tipo de paginas podemos hacer que generen dinero.
+
+A lo que despues de varias sugerencias decidimos crear una pagina sobre noticias de deportes
+que tenga una vista principal, con diferentes apartados para mayor facilidad de buscar informacion, que cuente 
+con imagenes, un diseño atractivo y minimalista para el usuario. 
+
