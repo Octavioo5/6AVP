@@ -1,0 +1,7 @@
+23/04/2024
+
+Comencé con los borradores de como se va a ver la página principal del sitio web,
+para esto estoy usando MockPlus para llevar a cabo el diseño.
+
+El nombre del sitio web seria DPMX Deportes México
+
