@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <script src="boostrap-5.0.2/css/bootstrap.css"></script>
 </head>
 <body>
         <form action="GuardarNoticia.php"  method="POST">
@@ -30,10 +31,9 @@
 
 
                       
-                      <input type="button" name="enviar" id="Enviar" value="enviar">
+                      <input type="submit" name="enviar" id="enviar" value="enviar">
                       <br><br>
-         
-      
+                      <form>
       <br>
 
 
