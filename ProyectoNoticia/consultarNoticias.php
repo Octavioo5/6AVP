@@ -9,7 +9,7 @@
     <script src="code.jquery.com_jquery-3.7.1.js"></script>
 </head>
 <body>
-    <?php 
+    <?php
         include 'menu.php';
         include 'conexion.php';
 
@@ -37,11 +37,11 @@
                                 <?php while($registro = $datos->fetch_assoc()){ ?>
                                     <tr>
                                         <td><?php echo $registro["id"]; ?></td>
-                                        <td><?php echo $registro["titulo"]; ?></td>
+                                        <td><?php echo $registro["nombre"]; ?></td>
                                         <td><?php echo $registro["lugar"]; ?></td>
                                         <td><?php echo $registro["fecha"]; ?></td>
                                         <td><?php echo $registro["cuerpo"]; ?></td>
-                                        <td><?php echo $registro["imagen"]; ?></td>
+                                        <td><?php echo $registro["imagenes"]; ?></td>
                                         <td>
                                             <a href="editarNoticia.php?id=<?php echo $registro["id"]?>" class="btn btn-xs btn-primary">Editar</a>
                                             <a href="eliminarNoticia.php?id=<?php echo $registro["id"]?>" class="btn btn-xs btn-danger">Eliminar</a>

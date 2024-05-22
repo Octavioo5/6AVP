@@ -2,13 +2,13 @@
 
     include 'conexion.php';
     $id = $_POST["id"];
-    $titulo = $_POST["titulo"];
+    $titulo = $_POST["nombre"];
     $lugar = $_POST["lugar"];
     $fecha = $_POST["fecha"];
     $cuerpo = $_POST["cuerpo"];
-    $imagen = $_POST["imagen"];
+    $imagen = $_POST["imagenes"];
 
-    $sql = "UPDATE noticias SET titulo='".$titulo."', lugar='".$lugar."', fecha=".$fecha.", cuerpo='".$cuerpo."', imagen='".$imagen."' WHERE id=".$id;
+    $sql = "UPDATE noticias SET nombre='".$titulo."', lugar='".$lugar."', fecha='".$fecha."', cuerpo='".$cuerpo."', imagenes='".$imagen."' WHERE id=".$id;
 
     if($conexion->query($sql) === TRUE){
         header("Location: consultarNoticias.php");

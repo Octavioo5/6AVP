@@ -9,7 +9,6 @@
 </head>
 <body>
     <?php 
-        include 'menu.php'; 
         include 'conexion.php';
         $id = $_GET["id"];
         $sql = "SELECT * FROM noticias WHERE id=".$id;
@@ -26,11 +25,11 @@
                     <input type="hidden" name="id" value="<?php echo $noticia["id"]; ?>">
                     <div class="form-group">
                         <label for="">Titulo:</label>
-                        <input type="text" name="titulo" value="<?php echo $noticia["titulo"]; ?>" class="form-control" placeholder="Teclea el titulo" required>
+                        <input type="text" name="nombre" value="<?php echo $noticia["nombre"]; ?>" class="form-control" placeholder="Teclea el titulo" required>
                     </div>
                     <div class="form-group">
                         <label for="">Lugar:</label>
-                        <input type="text" name="nc" value="<?php echo $noticia["lugar"]; ?>" class="form-control" placeholder="Teclea el lugar" required>
+                        <input type="text" name="lugar" value="<?php echo $noticia["lugar"]; ?>" class="form-control" placeholder="Teclea el lugar" required>
                     </div>
                     <div class="form-group">
                         <label for="">fecha:</label>
@@ -42,7 +41,7 @@
                     </div>
                     <div class="form-group">
                         <label for="">Imagen:</label>
-                        <input type="file" name="imagen" value="<?php echo $noticia["imagen"]; ?>" class="form-control"  required>
+                        <input type="file" name="imagenes" value="<?php echo $noticia["imagenes"]; ?>" class="form-control"  >
                     </div><br>
                     <div>
                         <input type="submit" value="Actualizar" class="btn btn-primary">
