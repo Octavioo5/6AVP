@@ -31,15 +31,11 @@
                  imagen: 
                  <input type="file" name="imagenes"  id="imagenes"  />
                  <br>
-
-
-                      
+                     
                       <input type="submit" name="enviar" id="enviar" value="enviar">
                       <br><br>
                       <form>
       <br>
-
-
         </form>
         
     <script src="js/bootstrap.bundle.js"></script>
