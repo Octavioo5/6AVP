@@ -33,21 +33,19 @@
                         
                                 <?php while($registro = $datos->fetch_assoc()){ ?>
                                    
-
-                                        <?php echo $registro["nombre"]; ?>
-                                        <?php echo $registro["lugar"]; ?>
-                                        <?php echo $registro["fecha"]; ?>
-                                        <?php echo $registro["cuerpo"]; ?>
-                                        <?php echo $registro["imagenes"]; ?>
+                                    <?php echo "<p>"; ?>
+                                    <?php echo $registro["nombre"]; ?>
+                                    <?php echo $registro["lugar"]; ?>
+                                    <?php echo $registro["fecha"]; ?>
+                                    <?php echo $registro["cuerpo"]; ?>
+                                    <?php echo $registro["imagenes"]; ?>
+                                    <?php echo "</p>"; ?>
                                         
-                                            
-                                        
-                                    
                                 <?php }?>
                            
                     </div>
                 <?php } else{ ?>
-                    <h2 class="m-4">No Existe datos en alumnos en la base de datos</h2>
+                    <h2 class="m-4">No Existe datos en noticias en la base de datos</h2>
                 <?php } ?>
             </div>
         </div>
